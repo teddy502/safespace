@@ -1,0 +1,24 @@
+  header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, #197706, rgb(13, 29, 24)); 
+  color: white;
+  padding:5px 40px 0 40px;  
+  display: flex;
+  justify-content: space-between;  
+  align-items: flex-end; 
+  }
+  body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url('https://images.pexels.com/photos/17484769/pexels-photo-17484769/free-photo-of-close-up-of-green-leaves.jpeg?auto=compress&cs=tinysrgb&w=600');  /* path to your image */
+      background-size: cover;                  
+      background-repeat: no-repeat;
+      background-position: center;
+    }

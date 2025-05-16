@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Therapy Signup</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <div>Safe Space</div>   
+  </header>
+  <div class="container"> 
+    <div class="step active" data-step="1">
+      <h3>1. What type of therapy are you looking for?</h3>
+      <div class="option-group">
+        <label class="option"><input type="radio" name="therapy" value="Individual"> Individual therapy</label>
+        <label class="option"><input type="radio" name="therapy" value="Teen"> Teen therapy</label>
+        <label class="option"><input type="radio" name="therapy" value="Couple"> Couple therapy</label>
+        <label class="option"><input type="radio" name="therapy" value="Psychiatry"> Psychiatry</label>
+      </div>
+    </div>    
+    <div class="step" data-step="2">
+      <h3>2. Tell us what you are looking for help with today</h3>
+      <div class="option-group">
+        <label class="option"><input type="radio" name="help" value="Anxiety"> Anxiety</label>
+        <label class="option"><input type="radio" name="help" value="Depression"> Depression</label>
+        <label class="option"><input type="radio" name="help" value="Insomnia"> Insomnia</label>
+        <label class="option"><input type="radio" name="help" value="Bipolar"> Bipolar Disorder</label>
+        <label class="option"><input type="radio" name="help" value="OCD"> Obsessive Compulsive Disorder</label>
+        <label class="option"><input type="radio" name="help" value="PTSD"> Posttraumatic Stress Disorder</label>
+        <label class="option"><input type="radio" name="help" value="Others"> Others</label>
+      </div>
+    </div>    
+    <div class="step" data-step="3">
+      <h3>3. Have you ever been prescribed medication for any mental health condition before?</h3>
+      <div class="option-group">
+        <label class="option"><input type="radio" name="medication" value="Yes"> Yes</label>
+        <label class="option"><input type="radio" name="medication" value="No"> No</label>
+        <label class="option"><input type="radio" name="medication" value="Not Sure"> Not sure</label>
+      </div>
+    </div>    
+    <div class="step" data-step="4">
+      <h3>4. Which gender do you identify yourself with?</h3>
+      <div class="option-group">
+        <label class="option"><input type="radio" name="gender" value="Male"> Male</label>
+        <label class="option"><input type="radio" name="gender" value="Female"> Female</label>
+        <label class="option"><input type="radio" name="gender" value="Others"> Others</label>
+      </div>
+    </div>    
+    <div class="step" data-step="5">
+      <h3>5. What gender would you prefer as your therapist?</h3>
+      <div class="option-group">
+        <label class="option"><input type="radio" name="therapistGender" value="Male"> Male</label>
+        <label class="option"><input type="radio" name="therapistGender" value="Female"> Female</label>
+        <label class="option"><input type="radio" name="therapistGender" value="Not Sure"> Not sure</label>
+      </div>
+    </div>    
+    <div class="step" data-step="6">
+      <h3>6. What is your date of birth?</h3>
+      <input type="date" id="dob">
+    </div>    
+    <div class="step" data-step="7">
+      <h3>7. Where do you live in Kenya?</h3>
+      <textarea rows="3" id="location" placeholder="Enter your location"></textarea>
+    </div>
+    <div class="step" data-step="8">
+      <h3>Enter your login credentials</h3>
+      <input type="email" id="email" placeholder="example@gmail.com" required>
+      <input type="password" id="password" placeholder="Create password"
+             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
+             title="Must be 8+ characters, include upper/lowercase, number & symbol">
+      <input type="password" id="confirmPassword" placeholder="Confirm password">
+    </div>
+    
+    <div id="successMessage">
+      You've successfully signed up!<a href="plpp.html">Click here to sign in</a>
+    </div>    
+    <div class="navigation">
+      <button id="prevBtn" onclick="previousStep()">Previous</button>
+      <button id="nextBtn" onclick="nextStep()">Next</button>
+    </div>
+  </div>
+  <script src="login.js"></script>  
+</body>
+</html>
