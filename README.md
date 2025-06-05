@@ -42,7 +42,7 @@ It includes features like multi-step sign-up forms, login validation, therapist 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/teddy502/safespace.git
-   cd SafeSpace
+   
   
 ## Installation
 1. Clone the repository:
