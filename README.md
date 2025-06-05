@@ -75,7 +75,7 @@ Welcome to SafeSpace — Your mental wellness companion 🌿
 
 
 ## Folder Structure
-Safespace
+SafeSpace
 ├── index.html
 ├── login.html
 ├── therapy.html
@@ -100,7 +100,7 @@ Safespace
 - Mental Health Resources Library: Curated articles and videos on emotional well-being.
 - Anonymized Feedback Reports: For improving service delivery and user care.
 
-I welcome contributions to Safespace
+I welcome contributions to SafeSpace
 
 Fork the repository
 Create new branches for features or bug fixes
